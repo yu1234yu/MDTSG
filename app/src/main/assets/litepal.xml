@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="MDTUG0.0.1"></dbname>
+    <version value="1"></version>
+    <list>
+        <mapping class="com.example.a00687560.model.StudentInfo" />
+        <mapping class="com.example.a00687560.model.LibsInfo" />
+        <mapping class="com.example.a00687560.model.LibsType" />
+        <mapping class="com.example.a00687560.model.SearchHistory" />
+        <mapping class="com.example.a00687560.model.LibsOffer" />
+        <mapping class="com.example.a00687560.model.LibsCollection" />
+    </list>
+
+</litepal>

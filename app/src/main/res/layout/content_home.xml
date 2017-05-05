@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.a00687560.mdtug001.HomeActivity">
+
+    <LinearLayout
+        android:id="@+id/hider_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:id="@+id/gridlayout"
+            android:layout_width="300dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center_horizontal"
+            android:columnCount="4"
+            android:rowCount="4"
+            android:visibility="gone">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:background="@drawable/btn_page_form" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginStart="12dp"
+                android:layout_row="1"
+                android:text="@string/page"
+                android:textColor="@color/blackFont" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginStart="35dp"
+                android:layout_row="0"
+                android:background="@drawable/btn_book_guide_form" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginStart="47dp"
+                android:layout_row="1"
+                android:text="@string/lib"
+                android:textColor="@color/blackFont" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_marginStart="25dp"
+                android:layout_row="0"
+                android:background="@drawable/btn_per_guide_form" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_marginStart="37dp"
+                android:layout_row="1"
+                android:text="@string/per"
+                android:textColor="@color/blackFont" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_marginStart="35dp"
+                android:layout_row="0"
+                android:background="@drawable/btn_news_form" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_marginStart="47dp"
+                android:layout_row="1"
+                android:text="@string/news"
+                android:textColor="@color/blackFont" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginTop="20dp"
+                android:layout_row="2"
+                android:background="@drawable/btn_paper_form" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="3"
+                android:text="@string/paper"
+                android:textColor="@color/blackFont" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="20dp"
+                android:layout_row="2"
+                android:background="@drawable/btn_web_form" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginStart="47dp"
+                android:layout_row="3"
+                android:text="@string/web"
+                android:textColor="@color/blackFont" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_row="2"
+                android:background="@drawable/btn_img_form" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_marginStart="37dp"
+                android:layout_row="3"
+                android:text="@string/picture"
+                android:textColor="@color/blackFont" />
+
+            <ImageButton
+                android:id="@+id/up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="20dp"
+                android:layout_row="2"
+                android:background="@drawable/btn_up" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_marginStart="47dp"
+                android:layout_row="3"
+                android:text="@string/up"
+                android:textColor="@color/blackFont" />
+
+        </GridLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_tag"
+            android:layout_width="300dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/menu_1"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_bg_form"
+                android:text="@string/page"
+                android:textColor="@drawable/btn_text_form" />
+
+            <Button
+                android:id="@+id/menu_2"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/btn_bg_form"
+                android:text="@string/lib"
+                android:textColor="@drawable/btn_text_form" />
+
+            <Button
+                android:id="@+id/menu_3"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/btn_bg_form"
+                android:text="@string/per"
+                android:textColor="@drawable/btn_text_form" />
+
+            <Button
+                android:id="@+id/menu_4"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/btn_bg_form"
+                android:text="@string/news"
+                android:textColor="@drawable/btn_text_form" />
+
+            <Button
+                android:id="@+id/menu_5"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/btn_bg_form"
+                android:text="@string/paper"
+                android:textColor="@drawable/btn_text_form" />
+
+            <Button
+                android:id="@+id/menu_6"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/btn_bg_form"
+                android:text="@string/more"
+                android:textColor="@drawable/btn_text_form" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="17dp"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <EditText
+                android:id="@+id/search_edit_text"
+                android:layout_width="252dp"
+                android:layout_height="46dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/search_form"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingStart="8dp" />
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="46dp"
+                android:background="@drawable/btn_search"
+                android:text="@string/search"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--三大图标导航-->
+    <RadioGroup
+        android:id="@+id/rgMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbRecommend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawablePadding="6dp"
+            android:drawableTop="@drawable/btn_offer_form"
+            android:text="@string/offer_for_me"
+            android:textColor="@color/blackFont" />
+
+        <RadioButton
+            android:id="@+id/rbBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="67dp"
+            android:button="@null"
+            android:drawablePadding="6dp"
+            android:drawableTop="@drawable/btn_book_guide_form"
+            android:text="@string/book_guide"
+            android:textColor="@color/blackFont" />
+
+        <RadioButton
+            android:id="@+id/rbMagazine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:button="@null"
+            android:drawablePadding="6dp"
+            android:drawableTop="@drawable/btn_per_guide_form"
+            android:text="@string/per_guide"
+            android:textColor="@color/blackFont" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="6dp"
+        android:background="@color/black" />
+
+    <FrameLayout
+        android:id="@+id/flContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
